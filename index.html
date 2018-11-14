@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Basic meta data -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chirrup PWA</title>
+  <link rel="stylesheet" href="css/main.css" type="text/css"/>
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Marmelad">
+
+  <!-- Manifest -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- For apple device compatibility -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Connecting Canary PWA">
+
+  <!-- TO DO: add proper file paths for icon and tile image -->
+  <link rel="apple-touch-icon" href="images/.png">
+  <meta name="msapplication-TileImage" content="images/.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
+</head>
+
+<body>
+  <!-- Settings Section -->
+  <div id="settingsID" class="settings">
+    <div class="header-settings">
+      <h1 class="header_title-settings">Settings</h1>
+      <span class="rightbtn" onclick="exitSettings()">&rsaquo;</span>
+    </div>
+
+    <div class="main-settings">
+
+      <div class="attribute_container">
+        <div class="attribute_form">
+          <span class="form_title">Sending Color :</span>
+          <div class="dropdown_options">
+            <div class="current_option">
+              <span id="color_value" class="dropbtn" onclick="dropColorOptions()">
+                Choose a color
+              </span>
+              <span class="down_icon">&#x2C5;<span>
+            </div>
+            <div id="ddc" class="dropdown_content">
+              <span onclick="colorRed()">Red</span>
+              <span onclick="colorGreen()">Green</span>
+              <span onclick="colorBlue()">Blue</span>
+              <span onclick="colorYellow()">Yellow</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="attribute_container">
+        <div class="attribute_form">
+          <span class="form_title">Sending Rhythym :</span>
+          <div class="dropdown_options">
+            <div class="current_option">
+              <span id="rhythym_value" class="dropbtn" onclick="dropRhythymOptions()">
+                Choose a rhythym
+              </span>
+              <span class="down_icon">&#x2C5;<span>
+            </div>
+            <div id="ddr" class="dropdown_content">
+              <span onclick="rhythym1()">Rhythym 1</span>
+              <span onclick="rhythym2()">Rhythym 2</span>
+              <span onclick="rhythym3()">Rhythym 3</span>
+              <span onclick="rhythym4()">Rhythym 4</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="attribute_container">
+        <div class="attribute_form">
+          <span class="form_title">Recipient Key :</span>
+          <div class="key_input">
+            <form name="key_form" id="key" action="#" onsubmit="">
+              <input type="text" name="number" class="key_text" placeholder="Enter Recipient Key" />
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="attribute_container">
+        <div class="submit_container">
+          <input type="submit" class="key_submit" value="Submit" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Send Section -->
+  <div id="sendID" class="send">
+    <div class="header-send">
+      <h1 class="header_title-send">Send a Thought</h1>
+      <span class="downbtn" onclick="exitSend()">&vee;</span>
+    </div>
+
+    <div class="main-send">
+    </div>
+  </div>
+
+  <!-- Header Section -->
+  <div class="header">
+    <h1 class="header_title">Chirrup</h1>
+    <span class="menu_link" onclick="openSettings()">
+      <img src="images/menu_icon.PNG" alt="Menu" width="25" height="25">
+    </span>
+  </div>
+
+  <!-- Middle Section -->
+  <div class="middle">
+    <div class="middle_container">
+      <div class="logo">
+        <img src="images/logo2.PNG" alt="logo" width="280" height="250">
+      </div>
+      <div class="last_sent">
+        <p>Last Sent</p>
+        <h2>28 days ago</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Section -->
+  <div class="bottom" onclick="openSend()">
+    <div class="up-send">
+      <img src="images/send_icon.PNG" alt="Send" width="25" height="25">
+    </div>
+    <span class="send_text">Send a thought</span>
+  </div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
