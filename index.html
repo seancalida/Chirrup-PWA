@@ -68,10 +68,10 @@
               <span class="down_icon">&#x2C5;<span>
             </div>
             <div id="ddr" class="dropdown_content">
-              <span onclick="rhythym1()">Rhythym 1</span>
-              <span onclick="rhythym2()">Rhythym 2</span>
-              <span onclick="rhythym3()">Rhythym 3</span>
-              <span onclick="rhythym4()">Rhythym 4</span>
+              <span onclick="rhythym1()">Barred Owl Rhythym</span>
+              <span onclick="rhythym2()">Cardinal Bird Rhythym</span>
+              <span onclick="rhythym3()">Cartoon Bird Rhythym</span>
+              <span onclick="rhythym4()">Hawk Rhythym</span>
             </div>
           </div>
         </div>
@@ -104,6 +104,37 @@
     </div>
 
     <div class="main-send">
+      
+      <div class="audio_container">
+        <audio controls id="owl">
+          <source src="sounds/Barred_Owl_Rhythym.mp3" type="audio/mp3">
+        </audio>
+      </div>
+
+      <div class="audio_container">
+        <audio controls id="cardinal">
+          <source src="sounds/Cardinal_Bird_Rhythym.mp3" type="audio/mp3">
+        </audio>
+      </div>
+
+      <div class="audio_container">
+        <audio controls id="cartoon">
+          <source src="sounds/Cartoon_Rhythym.mp3" type="audio/mp3">
+        </audio>
+      </div>
+
+      <div class="audio_container">
+        <audio controls id="hawk">
+          <source src="sounds/Hawk_Rhythym.mp3" type="audio/mp3">
+        </audio>
+      </div>
+
+      <div class="attribute_container">
+        <div class="submit_container">
+          <input type="Submit" class="key_submit" onclick="playRhythym()" value="Send a thought" />
+        </div>
+      </div>
+      
     </div>
   </div>
 
