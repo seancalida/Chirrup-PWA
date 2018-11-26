@@ -40,20 +40,32 @@ function dropRhythymOptions() {
   document.getElementById("ddr").style.display = "block";
 }
 
+var rhythym = document.getElementById("owl");
+
 function rhythym1() {
-  document.getElementById("rhythym_value").innerHTML = "Rhythym 1";
+  document.getElementById("rhythym_value").innerHTML = "Barred Owl Rhythym";
   document.getElementById("ddr").style.display = "none";
+  rhythym = document.getElementById("owl");
 }
 
 function rhythym2() {
-  document.getElementById("rhythym_value").innerHTML = "Rhythym 2";
+  document.getElementById("rhythym_value").innerHTML = "Cardinal Bird Rhythym";
   document.getElementById("ddr").style.display = "none";
+  rhythym = document.getElementById("cardinal");
 }
+
 function rhythym3() {
-  document.getElementById("rhythym_value").innerHTML = "Rhythym 3";
+  document.getElementById("rhythym_value").innerHTML = "Cartoon Bird Rhythym";
   document.getElementById("ddr").style.display = "none";
+  rhythym = document.getElementById("cartoon");
 }
+
 function rhythym4() {
-  document.getElementById("rhythym_value").innerHTML = "Rhythym 4";
+  document.getElementById("rhythym_value").innerHTML = "Hawk Rhythym";
   document.getElementById("ddr").style.display = "none";
+  rhythym = document.getElementById("hawk");
+}
+
+function playRhythym() {
+  rhythym.play();
 }
